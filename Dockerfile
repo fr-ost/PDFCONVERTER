@@ -3,6 +3,7 @@ FROM python:3.12-slim
 # Install LibreOffice Impress (for PPTX to PDF) and common fonts
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libreoffice-impress \
+    libreoffice-writer \
     fonts-liberation \
     fonts-noto \
     fonts-dejavu \
